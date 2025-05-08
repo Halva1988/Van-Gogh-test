@@ -1,7 +1,8 @@
 import fetchData from "./data.js";
 
 const data = await fetchData();
-console.log(data);
+
+const page = "https://halva1988.github.io/Van-Gogh-test/";
 
 const wrapperMain = document.querySelector(".wrapper__main");
 const titleMain = document.createElement("h1");
@@ -62,7 +63,7 @@ data.forEach((element) => {
 	item.appendChild(itemTitle);
 	item.appendChild(itemPriceDiv);
 	item.appendChild(itemContainerImg);
-	itemImg.src = element.url;
+	itemImg.src = `${page}/assets/${element.url}`;
 	itemTitle.textContent = element.title;
 	itemPrice.textContent = `${element.price} ₽`;
 
