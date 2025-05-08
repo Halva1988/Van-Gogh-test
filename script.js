@@ -66,9 +66,6 @@ data.forEach((element) => {
 	itemImg.src = `${page}${element.url}`;
 	itemTitle.textContent = element.title;
 	itemPrice.textContent = `${element.price} ₽`;
-console.log(page);
-console.log(element.url);
-
 
 	container.appendChild(item);
 });
