@@ -2,7 +2,7 @@ import fetchData from "./data.js";
 
 const data = await fetchData();
 
-const page = "https://halva1988.github.io/Van-Gogh-test/";
+const page = "https://halva1988.github.io/Van-Gogh-test";
 
 const wrapperMain = document.querySelector(".wrapper__main");
 const titleMain = document.createElement("h1");

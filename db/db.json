@@ -1,56 +1,56 @@
 [
 	{
 		"title": "Встраиваемый светильник Markt",
-		"url": "../assets/lamp.png",
+		"url": "/assets/lamp.png",
 		"price": "5 060",
 		"promo": true,
 		"promoPrice": "3 490"
 	},
 	{
 		"title": "Линейный светильник ARG",
-		"url": "../assets/lamp1.png",
+		"url": "/assets/lamp1.png",
 		"price": "6 700",
 		"promo": false,
 		"promoPrice": "5 060"
 	},
 	{
 		"title": "Сведодиодный светильник ",
-		"url": "../assets/lamp2.png",
+		"url": "/assets/lamp2.png",
 		"price": "6060",
 		"promo": true,
 		"promoPrice": "5 060"
 	},
 	{
 		"title": "Встраиваемый светильник Markt",
-		"url": "../assets/lamp.png",
+		"url": "/assets/lamp.png",
 		"price": "3 490",
 		"promo": false,
 		"promoPrice": "5 060"
 	},
 	{
 		"title": "Линейный светильник ARG",
-		"url": "../assets/lamp1.png",
+		"url": "/assets/lamp1.png",
 		"price": "6 060",
 		"promo": true,
 		"promoPrice": "6 700"
 	},
 	{
 		"title": "Сведодиодный светильник ",
-		"url": "../assets/lamp2.png",
+		"url": "/assets/lamp2.png",
 		"price": "5 060",
 		"promo": false,
 		"promoPrice": "4 060"
 	},
 	{
 		"title": "Встраиваемый светильник Markt",
-		"url": "../assets/lamp.png",
+		"url": "/assets/lamp.png",
 		"price": "5 060",
 		"promo": true,
 		"promoPrice": "3 490"
 	},
 	{
 		"title": "Линейный светильник ARG",
-		"url": "../assets/lamp1.png",
+		"url": "/assets/lamp1.png",
 		"price": "6 700",
 		"promo": false
 	}
