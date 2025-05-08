@@ -63,7 +63,7 @@ data.forEach((element) => {
 	item.appendChild(itemTitle);
 	item.appendChild(itemPriceDiv);
 	item.appendChild(itemContainerImg);
-	itemImg.src = `${page}/assets/${element.url}`;
+	itemImg.src = `${page}${element.url}`;
 	itemTitle.textContent = element.title;
 	itemPrice.textContent = `${element.price} ₽`;
 
