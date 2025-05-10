@@ -54,8 +54,7 @@ a {
 
 .wrapper {
 	margin: 0 auto;
-	max-width: 1920px;
-	padding: 0 260px;
+	width: 1400px;
 }
 
 .header__top {
@@ -323,15 +322,9 @@ a {
 }
 
 .footer__container {
-	position: relative;
 	display: flex;
-	gap: 194px;
 	flex-wrap: wrap;
-	padding: 60px 0;
-
-	.footer__logo {
-		height: 62px;
-	}
+	padding: 60px 0 0;
 
 	h5 {
 		font-weight: 600;
@@ -349,12 +342,20 @@ a {
 
 	.services ul li a {
 		font-weight: 400;
-		font-size: 16px;
-		color: var(--white);
+		font-size: 14px;
+		color: var(--gray);
 	}
 }
 
+.footer__logo {
+	width: 239px;
+	height: 62px;
+	margin-right: 194px;
+}
+
 .address {
+	width: 245px;
+	margin-right: 149px;
 	font-family: "Lato", sans-serif;
 
 	h5 {
@@ -368,8 +369,6 @@ a {
 	font-size: 16px;
 	color: var(--dark-gray);
 	text-align: end;
-	position: relative;
-	left: 70px;
 
 	p + p {
 		margin-top: 20px;
@@ -377,18 +376,20 @@ a {
 }
 
 .services {
+	width: 140px;
+	margin-right: 192px;
 	font-family: "Lato", sans-serif;
 }
 
 .reCAPTCHA {
-	position: absolute;
-	bottom: 60px;
 	width: 322px;
-	height: 84px;
+	margin-right: 109px;
 	font-family: "Roboto", sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 21px;
+	position: relative;
+	bottom: 90px;
 	color: var(--dark-gray);
 
 	span {
@@ -397,11 +398,10 @@ a {
 }
 
 .contacts {
-	position: absolute;
-	left: 420px;
-	bottom: 0;
 	width: 246px;
-	height: 160px;
+	margin-right: 507px;
+	position: relative;
+	bottom: 90px;
 	display: flex;
 	flex-direction: column;
 
@@ -420,18 +420,16 @@ a {
 }
 
 .payment {
-	position: absolute;
-	right: 0;
-	bottom: 91px;
 	display: flex;
 	align-items: center;
 	gap: 33px;
+	position: relative;
+	bottom: 90px;
 }
 
 @media (width < 1601px) {
 	.wrapper {
-		max-width: 1600px;
-		padding: 0 180px;
+		width: 1240px;
 	}
 
 	.search__input.active {
@@ -460,16 +458,22 @@ a {
 		font-size: 40px;
 	}
 
-	.footer__container {
-		gap: 82px;
-	}
-
 	.footer__logo {
-		margin-right: 70px;
+		width: 217px;
+		height: 56px;
+		margin-right: 176px;
 	}
 
 	.address {
-		margin-right: 110px;
+		margin-right: 82px;
+	}
+
+	.services {
+		margin-right: 137px;
+	}
+
+	.reCAPTCHA {
+		margin-right: 70px;
 	}
 
 	.politics {
@@ -477,14 +481,22 @@ a {
 	}
 
 	.contacts {
-		left: 388px;
+		margin-right: 387px;
+		bottom: 100px;
 	}
 }
 
 @media (width < 771px) {
 	.wrapper {
-		max-width: 770;
-		padding: 0 44px;
+		width: 680px;
+	}
+
+	.header__top {
+		display: none;
+	}
+
+	header {
+		height: 60px;
 	}
 
 	.logo {
@@ -518,19 +530,28 @@ a {
 	}
 
 	.footer__container {
-		/* display: block; */
 		padding: 50px 0;
-		gap: 40px;
 	}
 
 	.footer__logo {
 		width: 180px;
-		margin-right: 220px;
+		height: 47px;
+		margin-right: 420px;
+		order: 1;
+	}
+
+	.address {
+		order: 2;
+		width: 210px;
+		margin-top: 33px;
+		margin-right: 40px;
 	}
 
 	.contacts {
-		top: 150px;
-		left: 250px;
+		order: 3;
+		width: 246px;
+		margin-right: 42px;
+		top: 30px;
 	}
 
 	.contacts h5 {
@@ -542,9 +563,11 @@ a {
 	}
 
 	.services {
+		order: 4;
+		width: 140px;
+		margin-right: 0;
 		position: relative;
-		left: 255px;
-		bottom: 5px;
+		top: 30px;
 	}
 
 	.services h5 {
@@ -556,30 +579,35 @@ a {
 	}
 
 	.politics {
-		left: 0;
+		order: 5;
 		text-align: left;
-		bottom: 130px;
+		position: relative;
+    bottom: 55px;
+    left: 0;
 	}
 
 	.reCAPTCHA {
-		right: 0;
-    bottom: 55px;
-    width: 382px;
-    font-size: 16px;
+		order: 6;
+		width: 382px;
+		font-size: 16px;
+		top: 45px;
+    left: 45px;
+		margin-right: 0;
 	}
 
 	.payment {
-		left: 0;
+		order: 7;
+		bottom: 0;
 	}
 }
 
 @media (width < 391px) {
 	.wrapper {
-		max-width: 391;
-		padding: 0 35px;
+		width: 320px;
 	}
 
 	.main__title {
+		margin-top: 40px;
 		font-size: 24px;
 	}
 
@@ -591,8 +619,9 @@ a {
 	.card {
 		width: 155px;
 	}
-	
-	.card__title, .itemPriceContainer {
+
+	.card__title,
+	.itemPriceContainer {
 		font-size: 16px;
 	}
 
@@ -621,7 +650,7 @@ a {
 	.politics {
 		position: static;
 		order: 5;
-		margin-bottom: 72px;
+		margin-bottom: 60px;
 	}
 
 	.reCAPTCHA {
